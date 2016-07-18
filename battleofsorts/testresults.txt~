@@ -1,0 +1,103 @@
+kevin@kevin-U47A:~$ cd Documents/battleofsorts/
+kevin@kevin-U47A:~/Documents/battleofsorts$ ls
+BattleOfSorts.class  sorted-1000000.txt  sorted-10000.txt  sorted-100.txt        unsorted-100000.txt  unsorted-1000.txt
+BattleOfSorts.java   sorted-100000.txt   sorted-1000.txt   unsorted-1000000.txt  unsorted-10000.txt   unsorted-100.txt
+kevin@kevin-U47A:~/Documents/battleofsorts$ java BattleOfSorts sorted-100.txt 
+***************************** Sorting Test Results *********************************
+************************************************************************************
+File name: sorted-100.txt
+Sort Test: 100 keys
+ Insertion Sort: 39384 ns; First Key: Abraham Keller ; Last Key: Winston Davis 
+ Merge Sort:     188848 ns; First Key: Abraham Keller ; Last Key: Winston Davis 
+ Heap Sort:      473160 ns; First Key: Abraham Keller ; Last Key: Winston Davis 
+ Quick Sort:     160504 ns; First Key: Abraham Keller ; Last Key: Winston Davis 
+************************************************************************************
+kevin@kevin-U47A:~/Documents/battleofsorts$ java BattleOfSorts sorted-1000.txt 
+***************************** Sorting Test Results *********************************
+************************************************************************************
+File name: sorted-1000.txt
+Sort Test: 1000 keys
+ Insertion Sort: 421572 ns; First Key: Abel Andrews ; Last Key: Yvette Neal 
+ Merge Sort:     6467051 ns; First Key: Abel Andrews ; Last Key: Yvette Neal 
+ Heap Sort:      12006263 ns; First Key: Abel Andrews ; Last Key: Yvette Neal 
+ Quick Sort:     623307 ns; First Key: Abel Andrews ; Last Key: Yvette Neal 
+************************************************************************************
+kevin@kevin-U47A:~/Documents/battleofsorts$ java BattleOfSorts sorted-10000.txt 
+***************************** Sorting Test Results *********************************
+************************************************************************************
+File name: sorted-10000.txt
+Sort Test: 10000 keys
+ Insertion Sort: 5132755 ns; First Key: Aaron Bowen ; Last Key: Zachary Waters 
+ Merge Sort:     36066703 ns; First Key: Aaron Bowen ; Last Key: Zachary Waters 
+ Heap Sort:      24073234 ns; First Key: Aaron Bowen ; Last Key: Zachary Waters 
+ Quick Sort:     12453893 ns; First Key: Aaron Bowen ; Last Key: Zachary Waters 
+************************************************************************************
+kevin@kevin-U47A:~/Documents/battleofsorts$ java BattleOfSorts sorted-100000.txt 
+***************************** Sorting Test Results *********************************
+************************************************************************************
+File name: sorted-100000.txt
+Sort Test: 100000 keys
+ Insertion Sort: 10401020 ns; First Key: Aaron Abbott; Last Key: Zachary Yang
+ Merge Sort:     108948066 ns; First Key: Aaron Abbott; Last Key: Zachary Yang
+ Heap Sort:      54973177 ns; First Key: Aaron Abbott; Last Key: Zachary Yang
+ Quick Sort:     107818586 ns; First Key: Aaron Abbott; Last Key: Zachary Yang
+************************************************************************************
+kevin@kevin-U47A:~/Documents/battleofsorts$ java BattleOfSorts sorted-1000000.txt 
+***************************** Sorting Test Results *********************************
+************************************************************************************
+File name: sorted-1000000.txt
+Sort Test: 1000000 keys
+ Insertion Sort: 49492752 ns; First Key: Aaron Aaron; Last Key: Zachary Zimmerman
+ Merge Sort:     368726569 ns; First Key: Aaron Aaron; Last Key: Zachary Zimmerman
+ Heap Sort:      403578431 ns; First Key: Aaron Aaron; Last Key: Zachary Zimmerman
+ Quick Sort:     216619192 ns; First Key: Aaron Aaron; Last Key: Zachary Zimmerman
+************************************************************************************
+kevin@kevin-U47A:~/Documents/battleofsorts$ 
+
+
+
+
+UNSORTED
+kevin@kevin-U47A:~/Documents/battleofsorts$ java BattleOfSorts unsorted-100.txt 
+***************************** Sorting Test Results *********************************
+************************************************************************************
+File name: unsorted-100.txt
+Sort Test: 100 keys
+ Insertion Sort: 794822 ns; First Key: Abraham Keller ; Last Key: Winston Davis 
+ Merge Sort:     251768 ns; First Key: Abraham Keller ; Last Key: Winston Davis 
+ Heap Sort:      474310 ns; First Key: Abraham Keller ; Last Key: Winston Davis 
+ Quick Sort:     236752 ns; First Key: Abraham Keller ; Last Key: Winston Davis 
+************************************************************************************
+kevin@kevin-U47A:~/Documents/battleofsorts$ java BattleOfSorts unsorted-1000.txt 
+***************************** Sorting Test Results *********************************
+************************************************************************************
+File name: unsorted-1000.txt
+Sort Test: 1000 keys
+ Insertion Sort: 31706320 ns; First Key: Abel Andrews ; Last Key: Yvette Neal 
+ Merge Sort:     1923134 ns; First Key: Abel Andrews ; Last Key: Yvette Neal 
+ Heap Sort:      2850247 ns; First Key: Abel Andrews ; Last Key: Yvette Neal 
+ Quick Sort:     813093 ns; First Key: Abel Andrews ; Last Key: Yvette Neal 
+************************************************************************************
+kevin@kevin-U47A:~/Documents/battleofsorts$ java BattleOfSorts unsorted-10000.txt 
+***************************** Sorting Test Results *********************************
+************************************************************************************
+File name: unsorted-10000.txt
+Sort Test: 10000 keys
+ Insertion Sort: 169983345 ns; First Key: Aaron Bowen ; Last Key: Zachary Waters 
+ Merge Sort:     49297867 ns; First Key: Aaron Bowen ; Last Key: Zachary Waters 
+ Heap Sort:      29926792 ns; First Key: Aaron Bowen ; Last Key: Zachary Waters 
+ Quick Sort:     18271927 ns; First Key: Aaron Bowen ; Last Key: Zachary Waters 
+************************************************************************************
+kevin@kevin-U47A:~/Documents/battleofsorts$ java BattleOfSorts unsorted-100000.txt 
+***************************** Sorting Test Results *********************************
+************************************************************************************
+File name: unsorted-100000.txt
+Sort Test: 100000 keys
+ Insertion Sort: 46798922835 ns; First Key: Aaron Abbott; Last Key: Zachary Yang
+ Merge Sort:     147131703 ns; First Key: Aaron Abbott; Last Key: Zachary Yang
+ Heap Sort:      115542865 ns; First Key: Aaron Abbott; Last Key: Zachary Yang
+ Quick Sort:     71913872 ns; First Key: Aaron Abbott; Last Key: Zachary Yang
+************************************************************************************
+kevin@kevin-U47A:~/Documents/battleofsorts$ 
+
+

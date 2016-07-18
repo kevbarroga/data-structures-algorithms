@@ -1,0 +1,59 @@
+								Operations_Manual.txt
+								
+
+- Invoking the program
+
+Run the program with a command line argument, textfile that consist a list of names, sorted or unsorted.
+The file does not contain any delimiters, only a string and a newline character.
+
+If no arguments are specified, the program will quit.
+
+If more than one argument is specified, the program will quit.
+
+If the path of the file does not exist, the program will quit.
+
+
+- Using command line
+
+Once the file is successfully read, all the names will be read into an ArrayList<String> as  strings.
+The command line will look something like this: 
+
+----------Command Line----------
+
+OPTIONS:
+Execute one of these methods on all sets:
+* insert
+* search
+* predecessor
+* successor
+* minimum
+* maximum
+* delete
+Time all methods (except delete):
+* runtest
+To exit/quit program:
+* quit
+
+
+Available commands are: runtest, insert, search, delete, predecessor, successor, minimum, maximum, and quit.
+
+runtest will preform insertion, search (using 10 random generated keys), predecessor, successor,
+minimum, and maximum, on all four data structures, while timing their runtime using  System.nanoTime(), and then printing the results in a table.					
+ 
+insert, search, delete, predecessor, and successor require a key to be submitted, so the driver class can 
+preform the specified operation.
+
+NOTE: 
+Certain commands that prompt the user for a key to preform a search are Case-sensitive, and must be extended by an extra whitespace ' ', since the test files this program used contain an extra whitespace after each name.
+
+- Error Messages
+
+Error Code: 1100 -> results from typing a non-existent command
+
+Error Code: 0100 -> results from trying to insert a key already in the set
+
+Error Code: 0010 -> results from trying to preform an operation on a key thats non-existent in the  set
+
+Error Code: 0000 -> results from trying to preform a min or max operation on an empty set
+
+Error Code: 1111 -> the default error code when the program is not started correctly

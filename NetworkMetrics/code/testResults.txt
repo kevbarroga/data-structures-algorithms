@@ -1,0 +1,355 @@
+kevin@kevin-U47A:~$ ls
+Desktop    Downloads         libpeerconnection.log  Pictures  Templates   Videos
+Documents  examples.desktop  Music                  Public    Ubuntu One
+kevin@kevin-U47A:~$ cd Documents/
+kevin@kevin-U47A:~/Documents$ cd code/
+kevin@kevin-U47A:~/Documents/code$ ls
+AList.class  Data.java                           DynamicSet.class        VertexComparable.java
+AList.java   DFS.class                           DynamicSet.java         Vertex.java
+Arc.class    DFS.java                            Metrics.class           VertexListComparable.class
+Arc.java     DirectedGraph$ArcIterator.class     Metrics.java            VertexListComparable.java
+BNode.class  DirectedGraph.class                 Utils.class             VNAParser.class
+BNode.java   DirectedGraph.java                  Utils$Command.class     VNAParser.java
+BTree.class  DirectedGraph$VertexIterator.class  Utils.java
+BTree.java   Driver.class                        Vertex.class
+Data.class   Driver.java                         VertexComparable.class
+kevin@kevin-U47A:~/Documents/code$ cd ..
+kevin@kevin-U47A:~/Documents$ javac *.java
+javac: file not found: *.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+kevin@kevin-U47A:~/Documents$ javac  code/*.java
+kevin@kevin-U47A:~/Documents$ ls
+battleofsorts       code             p2p-Gnutella31.vna   SCC-Test.vna          ti-full.vna
+celegansneural.vna  email-Enron.vna  political-blogs.vna  soc-Epinions1.vna     web-google.vna
+cit-HepTh.vna       Graph            Project 1            soc-Slashdot0902.vna  wiki-Vote.vna
+kevin@kevin-U47A:~/Documents$ java code\Driver
+Error: Could not find or load main class codeDriver
+kevin@kevin-U47A:~/Documents$ java code/Driver
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+SCC-Test.vna
+
+------------------------------------------------------------------------
+SCC-Test.vna
+------------------------------------------------------------------------
+|V| = 41  
+|A| = 67  
+Density = 0.04085365853658537
+Degree Distribution:    minimum   average   maximum
+       inDegree         0          1.634         4
+       outDegree        0          1.634         4
+Number of Strongly Connected Components:   12
+SCC       Size      Members   
+1          1          6         
+2          1          2         
+3          1          9         
+4          1          1         
+5          1          7         
+6          1          8         
+7          3          4,5,3     
+8          5          52,58,54,56,50
+9          6          28,22,29,27,21,24
+10         6          43,46,40,41,47,48
+11         7          32,39,31,30,34,37,36
+12         8          14,13,11,16,17,19,18,10
+Percent Vertices in Largest Strongly Connected Component:  19.512
+Reciprocity: 0.11940298507462686
+Degree Correlation: -0.3333333333333333
+number of paths:  6
+number of triads:  6.0
+Clustering Coefficient: 1.0
+
+
+What would you like to do?
+Options available: analyzeGraph, quit
+^[[A^[[B
+That command is not recognized
+
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+celegansneural.vna
+
+------------------------------------------------------------------------
+celegansneural.vna
+------------------------------------------------------------------------
+|V| = 297 
+|A| = 2345
+Density = 0.026674401674401674
+Degree Distribution:    minimum   average   maximum
+       inDegree         0          7.896       134
+       outDegree        0          7.896        39
+Number of Strongly Connected Components:   57
+SCC       Size      Members   
+1          1          280       
+2          1          261       
+3          1          288       
+4          1          287       
+5          1          57        
+6          1          296       
+7          1          243       
+8          1          143       
+9          1          294       
+10         1          54        
+11         1          281       
+12         1          278       
+13         1          274       
+14         1          291       
+15         1          293       
+16         1          284       
+17         1          230       
+18         1          260       
+19         1          251       
+20         1          292       
+21         1          290       
+22         1          285       
+23         1          295       
+24         1          242       
+25         1          289       
+26         1          134       
+27         1          258       
+28         1          259       
+29         1          286       
+30         1          94        
+31         1          88        
+32         1          80        
+33         1          81        
+34         1          174       
+35         1          186       
+36         1          252       
+37         1          270       
+38         1          269       
+39         1          271       
+40         1          234       
+41         1          231       
+42         1          249       
+43         1          227       
+44         1          273       
+45         1          268       
+46         1          49        
+47         1          51        
+48         1          39        
+49         1          78        
+50         1          79        
+51         1          25        
+52         1          37        
+53         1          44        
+54         1          190       
+55         2          247,248   
+56         2          46,23     
+57         239        131,21,92,263,35,42,20,112,220,199,189,240,235,63,58,236,101,144,103,0,110,255,43,60,150,253,160,136,154,140,124,195,105,275,137,116,200,19,111,237,45,41,156,127,95,264,69,208,86,121,61,167,162,267,266,216,22,155,90,213,246,178,152,98,123,188,171,204,194,229,212,176,250,146,265,166,239,279,172,157,50,15,48,244,74,33,149,3,129,7,73,47,100,164,221,158,70,106,179,211,66,232,210,64,241,283,29,24,203,165,215,72,109,6,68,71,8,142,151,84,153,119,201,27,228,196,205,214,14,198,62,197,175,218,163,233,36,145,169,159,277,223,26,170,67,148,104,219,173,272,226,168,115,128,184,222,206,91,53,1,11,40,202,59,192,32,224,107,108,96,181,257,125,85,118,133,31,38,75,82,30,217,13,135,77,139,276,209,34,114,56,113,256,282,254,207,10,262,28,130,245,65,191,16,93,177,126,117,18,83,76,180,193,122,161,141,2,17,55,132,9,182,87,102,185,225,5,238,120,12,183,52,99,187,89,138,97,147,4
+Percent Vertices in Largest Strongly Connected Component:  80.471
+Reciprocity: 0.16801705756929639
+Degree Correlation: 0.08609081205353478
+number of paths:  302
+number of triads:  1010.0
+Clustering Coefficient: 3.3443708609271523
+
+
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+political-blogs.vna
+
+------------------------------------------------------------------------
+political-blogs.vna
+------------------------------------------------------------------------
+|V| = 1490
+|A| = 19025
+Density = 0.0085751889696702
+Degree Distribution:    minimum   average   maximum
+       inDegree         0         12.768       337
+       outDegree        0         12.768       256
+Number of Strongly Connected Components:  688
+Percent Vertices in Largest Strongly Connected Component:  53.221
+Reciprocity: 0.24252299605781866
+Degree Correlation: 0.8431170077994604
+number of paths:  4226
+number of triads:  32335.0
+Clustering Coefficient: 7.651443445338382
+
+
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+wiki-Vote.vna
+
+------------------------------------------------------------------------
+wiki-Vote.vna
+------------------------------------------------------------------------
+|V| = 7115
+|A| = 103689
+Density = 0.0020485375110809584
+Degree Distribution:    minimum   average   maximum
+       inDegree         0         14.573       457
+       outDegree        0         14.573       893
+Number of Strongly Connected Components: 5816
+Percent Vertices in Largest Strongly Connected Component:  18.271
+Reciprocity: 0.0564572905515532
+Degree Correlation: 1.1110578594101619
+number of paths:  5356
+number of triads:  196827.0
+Clustering Coefficient: 36.74887976101569
+
+
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+p2p-Gnutella.vna
+File not found!  Please try again
+
+What would you like to do?
+Options available: analyzeGraph, quit
+p2p-Gnutella.vna
+That command is not recognized
+
+What would you like to do?
+Options available: analyzeGraph, quit
+p2p-Gnutella31.vna
+That command is not recognized
+
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+p2p-Gnutella31.vna
+
+------------------------------------------------------------------------
+p2p-Gnutella31.vna
+------------------------------------------------------------------------
+|V| = 62586
+|A| = 147892
+Density = -3.9122540451204797E-4
+Degree Distribution:    minimum   average   maximum
+       inDegree         0          2.363        68
+       outDegree        0          2.363        78
+Number of Strongly Connected Components:48438
+Percent Vertices in Largest Strongly Connected Component:  22.607
+Reciprocity: 0.0
+Degree Correlation: NaN
+number of paths:  0
+number of triads:  655.0
+Clustering Coefficient: Infinity
+
+
+What would you like to do?
+Options available: analyzeGraph, quit
+^[[A
+That command is not recognized
+
+What would you like to do?
+Options available: analyzeGraph, quit
+
+That command is not recognized
+
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+ti-full.vna
+^Ckevin@kevin-U47A:~/Documents$ java code/Driver
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+g-297-2345.vna
+
+------------------------------------------------------------------------
+g-297-2345.vna
+------------------------------------------------------------------------
+|V| = 297 
+|A| = 2345
+Density = 0.026674401674401674
+Degree Distribution:    minimum   average   maximum
+       inDegree         2          7.896        18
+       outDegree        2          7.896        19
+Number of Strongly Connected Components:    1
+Percent Vertices in Largest Strongly Connected Component: 100.000
+Reciprocity: 0.028997867803837955
+Degree Correlation: -0.07936507936507936
+number of paths:  14
+number of triads:  157.0
+Clustering Coefficient: 11.214285714285714
+
+
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+g-1490-19025.vna
+
+------------------------------------------------------------------------
+g-1490-19025.vna
+------------------------------------------------------------------------
+|V| = 1490
+|A| = 19025
+Density = 0.0085751889696702
+Degree Distribution:    minimum   average   maximum
+       inDegree         2         12.768        25
+       outDegree        2         12.768        30
+Number of Strongly Connected Components:    1
+Percent Vertices in Largest Strongly Connected Component: 100.000
+Reciprocity: 0.007358738501971091
+Degree Correlation: 0.047619047619047616
+number of paths:  14
+number of triads:  677.0
+Clustering Coefficient: 48.357142857142854
+
+
+What would you like to do?
+Options available: analyzeGraph, quit
+analyzeGraph
+Type in the name of the graph:  
+g-7115-103689.vna
+
+------------------------------------------------------------------------
+g-7115-103689.vna
+------------------------------------------------------------------------
+|V| = 7115
+|A| = 103689
+Density = 0.0020485375110809584
+Degree Distribution:    minimum   average   maximum
+       inDegree         4         14.573        30
+       outDegree        1         14.573        36
+Number of Strongly Connected Components:    1
+Percent Vertices in Largest Strongly Connected Component: 100.000
+Reciprocity: 0.0017552488692146708
+Degree Correlation: -0.03409090909090909
+number of paths:  6
+number of triads:  1010.0
+Clustering Coefficient: 168.33333333333334
+
+
+What would you like to do?
+Options available: analyzeGraph, quit
+^A
+That command is not recognized
+
+What would you like to do?
+Options available: analyzeGraph, quit
+
+That command is not recognized
+
+What would you like to do?
+Options available: analyzeGraph, quit
+exit
+That command is not recognized
+
+What would you like to do?
+Options available: analyzeGraph, quit
+quti
+That command is not recognized
+
+What would you like to do?
+Options available: analyzeGraph, quit
+quit
+Goodbye!
+kevin@kevin-U47A:~/Documents$ 
+

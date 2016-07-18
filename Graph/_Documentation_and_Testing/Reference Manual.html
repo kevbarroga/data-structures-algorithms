@@ -1,0 +1,742 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Reference Manual.docx</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+h1
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Trebuchet MS";
+	color:black;
+	font-weight:normal;}
+h1.CxSpFirst
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Trebuchet MS";
+	color:black;
+	font-weight:normal;}
+h1.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Trebuchet MS";
+	color:black;
+	font-weight:normal;}
+h1.CxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Trebuchet MS";
+	color:black;
+	font-weight:normal;}
+h2
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS";
+	color:black;}
+h2.CxSpFirst
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS";
+	color:black;}
+h2.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS";
+	color:black;}
+h2.CxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS";
+	color:black;}
+h3
+	{margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;}
+h3.CxSpFirst
+	{margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;}
+h3.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;}
+h3.CxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;}
+h4
+	{margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	text-decoration:underline;}
+h4.CxSpFirst
+	{margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	text-decoration:underline;}
+h4.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	text-decoration:underline;}
+h4.CxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	text-decoration:underline;}
+h5
+	{margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;}
+h5.CxSpFirst
+	{margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;}
+h5.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;}
+h5.CxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;}
+h6
+	{margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+h6.CxSpFirst
+	{margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+h6.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+h6.CxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:21.0pt;
+	font-family:"Trebuchet MS";
+	color:black;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:21.0pt;
+	font-family:"Trebuchet MS";
+	color:black;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:21.0pt;
+	font-family:"Trebuchet MS";
+	color:black;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:21.0pt;
+	font-family:"Trebuchet MS";
+	color:black;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-style:italic;}
+p.MsoSubtitleCxSpFirst, li.MsoSubtitleCxSpFirst, div.MsoSubtitleCxSpFirst
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-style:italic;}
+p.MsoSubtitleCxSpMiddle, li.MsoSubtitleCxSpMiddle, div.MsoSubtitleCxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-style:italic;}
+p.MsoSubtitleCxSpLast, li.MsoSubtitleCxSpLast, div.MsoSubtitleCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'>Reference Manual</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>This application was written for use in Project 2 - Graph
+ADT and Algorithms for ICS311 Fall 2013 at the University of Hawaii at Manoa to
+understand graph theory and its algorithms. </p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>The methods created were implemented in accordance with the
+interface given in the project specifications and influenced by Goodrich and
+Tamassia’s Graph Abstract Data Type.</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>The main data structures used in the implementation of this
+application are ArrayLists which were traversed by the use of iterators
+provided by the Java standard library. </p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal><a href="Javadoc/index.html">Javadocs</a><span
+style='color:windowtext'> - </span>information about specific methods and
+classes and their functionalities.</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>Analysis of each method</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>*Data Structure used was an Adjacency List so methods that
+processes adjacent vertices are O(E)</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal><b><u>Graph Class</u></b></p>
+
+<p class=MsoNormal><u> </u></p>
+
+<p class=MsoNormal>public Integer numVertices()</p>
+
+<p class=MsoNormal>&#920;(1) returns the size of the array list</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>public Integer numEdges()</p>
+
+<p class=MsoNormal>&#920;(1) returns the size of the array list</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>public Double density()</p>
+
+<p class=MsoNormal>&#920;(1) returns |E| / (|V| * (|V| - 1)) </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>public Integer largestSCC()</p>
+
+<p class=MsoNormal>O(n) processes SCC’s and returns largest</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>public Double largestSCCPercent()</p>
+
+<p class=MsoNormal>&#920;(1) returns percent of largestSCC / numVertices</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>public boolean areAdjacent(Vertex&lt;T,E&gt; brother,
+Vertex&lt;T,E&gt; sister)</p>
+
+<p class=MsoNormal>O(E) loops through one adjacency list to find the other
+vertex</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Vertex&lt;T,E&gt;&gt; vertices()</p>
+
+<p class=MsoNormal>O(V) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Edge&lt;T,E&gt;&gt; edges()</p>
+
+<p class=MsoNormal>O(E) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Edge&lt;T,E&gt;&gt; directedEdges()</p>
+
+<p class=MsoNormal>O(E) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Vertex&lt;T,E&gt;&gt; finished()</p>
+
+<p class=MsoNormal>O(V) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Vertex&lt;T,E&gt; getVertex (T key)</p>
+
+<p class=MsoNormal>O(V) must loop through all the vertices in the vertices
+adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>//Mutators</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Vertex&lt;T,E&gt; insertVertex(Vertex&lt;T,E&gt;
+newVertex)</p>
+
+<p class=MsoNormal>&#920;(1) just adds the vertex to the end of the vertices
+adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Edge&lt;T,E&gt; insertDirectedEdge(Vertex&lt;T,E&gt;
+u, Vertex&lt;T,E&gt; v, Edge&lt;T,E&gt; edge) throws InvalidEdgeException</p>
+
+<p class=MsoNormal>&#920;(1) just adds to the end of corresponding adjacency
+lists</p>
+
+<p class=MsoNormal>           </p>
+
+<p class=MsoNormal>public Vertex&lt;T,E&gt; removeVertex(Vertex&lt;T,E&gt; v)
+throws InvalidEdgeException</p>
+
+<p class=MsoNormal>O(V+E) loops through incident Edges and removes them as well
+as updating each adjacent vertex</p>
+
+<p class=MsoNormal>           </p>
+
+<p class=MsoNormal>private void removeVertex(Iterator&lt;Vertex&lt;T,E&gt;&gt;
+itrVert, Vertex&lt;T,E&gt; v)</p>
+
+<p class=MsoNormal>O(V) loops through the  corresponding vertex adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Edge&lt;T,E&gt; removeEdge(Edge&lt;T,E&gt; e) throws
+InvalidEdgeException </p>
+
+<p class=MsoNormal>O(V+E) updates each end vertex and their corresponding
+incident edge and adjacent vertex lists</p>
+
+<p class=MsoNormal>           </p>
+
+<p class=MsoNormal>private void removeEdge(Iterator&lt;Edge&lt;T,E&gt;&gt;
+itrEdge, Edge&lt;T,E&gt; e)</p>
+
+<p class=MsoNormal>O(V+E)</p>
+
+<p class=MsoNormal>           </p>
+
+<p class=MsoNormal>public void reverseGraph() throws InvalidEdgeException</p>
+
+<p class=MsoNormal>O(V+E) loops through each edge in the edge adjacency list
+and updates each vertex’s corresponding adjacency lists</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void depthFS (Iterator&lt;Vertex&lt;T,E&gt;&gt;
+itrDFS)</p>
+
+<p class=MsoNormal>O(V) loops through each vertex in the iterator    </p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>private void depthFSVisit(Vertex&lt;T, E&gt; current)</p>
+
+<p class=MsoNormal>O(V) loops through each vertex less the one first visited</p>
+
+<p class=MsoNormal>           </p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal><b><u>Vertex Class</u></b></p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public E getAnnotation(T key)</p>
+
+<p class=MsoNormal>&#920;(1)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>public Integer getInDeg()</p>
+
+<p class=MsoNormal>&#920;(1) returns the number of edges going in</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>public Integer getOutDeg()</p>
+
+<p class=MsoNormal>&#920;(1) returns the size of the array list</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Integer getDeg()</p>
+
+<p class=MsoNormal>&#920;(1) returns the total size of the two array lists</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Integer getNumIncidentEdges()</p>
+
+<p class=MsoNormal>&#920;(1) returns the size of the array list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Integer getNumInAdjacentVertices()</p>
+
+<p class=MsoNormal>&#920;(1) returns the size of the array list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Integer getNumOutAdjacentVertices()</p>
+
+<p class=MsoNormal>&#920;(1) returns the size of the array list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Integer getNumAdjacentVertices()</p>
+
+<p class=MsoNormal>&#920;(1) returns the size of the array list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Vertex&lt;T,E&gt; getOpposite (Edge&lt;T,E&gt; edge)
+throws InvalidEdgeException</p>
+
+<p class=MsoNormal>&#920;(1) gets opposite vertex from the edge</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Boolean isAdjacentWith(Vertex&lt;T,E&gt; otherVertex)</p>
+
+<p class=MsoNormal>O(VE loops through adjacent vertices list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Vertex&lt;T,E&gt;&gt; adjacentVertices()</p>
+
+<p class=MsoNormal>O(E) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Vertex&lt;T,E&gt;&gt; inVertices()</p>
+
+<p class=MsoNormal>O(E) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Vertex&lt;T,E&gt;&gt; outVertices()</p>
+
+<p class=MsoNormal>O(E) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Edge&lt;T,E&gt;&gt; incidentEdges()</p>
+
+<p class=MsoNormal>O(E) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Edge&lt;T,E&gt;&gt; inEdges()</p>
+
+<p class=MsoNormal>O(E) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Iterator&lt;Edge&lt;T,E&gt;&gt; outEdges()</p>
+
+<p class=MsoNormal>O(E) returns the iterator of indicated adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void setAnnotation(T key, E value)</p>
+
+<p class=MsoNormal>O(1)</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public E removeAnnotation(T key)</p>
+
+<p class=MsoNormal>O(1)</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public E removeAnnotation(T key)</p>
+
+<p class=MsoNormal>O(1)</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void removeFromEdges(Iterator&lt;Edge&lt;T,E&gt;&gt;
+iterator, T remove)</p>
+
+<p class=MsoNormal>O(E) loops through edges adjacency list</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal><b><u>Arc Class</u></b></p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public E getAnnotation(T key)</p>
+
+<p class=MsoNormal>O(1) returns field value</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Vertex&lt;T,E&gt; getDestination() throws
+InvalidEdgeException</p>
+
+<p class=MsoNormal>O(1)</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public Vertex&lt;T,E&gt; getOrigin() throws
+InvalidEdgeException</p>
+
+<p class=MsoNormal>O(1)</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public ArrayList&lt;Vertex&lt;T,E&gt;&gt; getEnds()</p>
+
+<p class=MsoNormal>O(1)</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void addEnds(Vertex&lt;T,E&gt; brother,
+Vertex&lt;T,E&gt; sister)</p>
+
+<p class=MsoNormal>O(1)</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void deleteEnds()</p>
+
+<p class=MsoNormal>O(1)</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void setDirection (Vertex&lt;T,E&gt; brother,
+Vertex&lt;T,E&gt; sister)</p>
+
+<p class=MsoNormal>O(1)  updates fields and adjacency lists</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void setDirectionTo(Vertex&lt;T,E&gt; newDestination)
+throws InvalidEdgeException</p>
+
+<p class=MsoNormal>O(1)  updates fields and adjacency lists</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void setDirectionFrom(Vertex&lt;T,E&gt; newOrigin)
+throws InvalidEdgeException</p>
+
+<p class=MsoNormal>O(1)  updates fields and adjacency lists</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void makeDirected(Vertex&lt;T, E&gt; brother,
+Vertex&lt;T, E&gt; sister)</p>
+
+<p class=MsoNormal>O(1)  updates fields and adjacency lists</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void makeUndirected()</p>
+
+<p class=MsoNormal>O(1)  updates fields and adjacency lists</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>public void reverseDirection() throws InvalidEdgeException</p>
+
+<p class=MsoNormal>O(1)  updates fields and adjacency lists</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal align=center style='text-align:center'><a href="index.html">Return
+to Index</a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
